@@ -4,9 +4,9 @@
 [![Coverage Status](https://img.shields.io/coveralls/simleb/bindata.svg)](https://coveralls.io/r/simleb/bindata)
 [![Build Status](https://drone.io/github.com/simleb/bindata/status.png)](https://drone.io/github.com/simleb/bindata/latest)
 
-The `bindata` command translates binary files into byte arrays in Go source.
+The `bindata` command embeds binary files as byte arrays into a Go source file.
 
-`bindata` is designed to work with `go generate`, but can be used on its own as well.
+It is designed with go generate in mind, but can be used on its own as well.
 
 The data is stored as a map of byte slices or strings indexed by the file paths as specified on the command line. The default name of the map is `bindata` but a custom name can be specified on the command line (`-m`).
 

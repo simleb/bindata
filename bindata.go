@@ -1,6 +1,6 @@
-// The bindata command translates binary files into byte arrays in Go source.
+// The bindata command embeds binary files as byte arrays into a Go source file.
 //
-// bindata is designed to work with go generate, but can be used on its own as well.
+// It is designed with go generate in mind, but can be used on its own as well.
 //
 // The data is stored as a map of byte slices or strings indexed by the
 // file paths as specified on the command line. The default name of the
