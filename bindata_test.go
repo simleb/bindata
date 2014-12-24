@@ -77,7 +77,7 @@ func TestEmpty(t *testing.T) {
 
 // This file is generated. Do not edit directly.
 
-// bindata stores binary files as byte slices indexed by filepaths.
+// bindata stores binary files as byte slices indexed by file paths.
 var bindata = map[string][]byte{
 }
 `
@@ -90,11 +90,11 @@ func TestFlags(t *testing.T) {
 
 // This file is generated. Do not edit directly.
 
-// MyData stores binary files as byte slices indexed by filepaths.
+// MyData stores binary files as byte slices indexed by file paths.
 var MyData = map[string][]byte{
 }
 `
-	runTest(t, ref, "-pkg", "foo", "-map", "MyData")
+	runTest(t, ref, "-p", "foo", "-m", "MyData")
 }
 
 // TestString tests the conversion to a map of strings.
@@ -103,7 +103,7 @@ func TestString(t *testing.T) {
 
 // This file is generated. Do not edit directly.
 
-// bindata stores binary files as strings indexed by filepaths.
+// bindata stores binary files as strings indexed by file paths.
 var bindata = map[string]string{
 	"play/hello.go": "" +
 		"\x70\x61\x63\x6b\x61\x67\x65\x20\x6d\x61\x69\x6e\x0a\x0a\x69\x6d" +
@@ -113,7 +113,7 @@ var bindata = map[string]string{
 		"\xb8\x96\xe7\x95\x8c\x22\x29\x0a\x7d\x0a",
 }
 `
-	runTest(t, ref, "-string", "-prefix", testdata, filepath.Join(testdata, "play", "hello.go"))
+	runTest(t, ref, "-s", "-r", testdata, filepath.Join(testdata, "play", "hello.go"))
 }
 
 // TestFiles tests the reference output when there is a hierarchy of files to convert.
@@ -122,7 +122,7 @@ func TestFiles(t *testing.T) {
 
 // This file is generated. Do not edit directly.
 
-// bindata stores binary files as byte slices indexed by filepaths.
+// bindata stores binary files as byte slices indexed by file paths.
 var bindata = map[string][]byte{
 	"empty": []byte{
 	},
@@ -179,5 +179,5 @@ var bindata = map[string][]byte{
 	},
 }
 `
-	runTest(t, ref, "-prefix", testdata, testdata)
+	runTest(t, ref, "-r", testdata, testdata)
 }
