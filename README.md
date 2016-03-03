@@ -1,8 +1,10 @@
 # bindata
 
 [![GoDoc](https://godoc.org/github.com/simleb/bindata?status.svg)](http://godoc.org/github.com/simleb/bindata)
-[![Coverage Status](https://img.shields.io/coveralls/simleb/bindata.svg)](https://coveralls.io/r/simleb/bindata)
+[![Coverage Status](https://coveralls.io/repos/github/simleb/bindata/badge.svg?branch=master)](https://coveralls.io/github/simleb/bindata?branch=master)
 [![Build Status](https://drone.io/github.com/simleb/bindata/status.png)](https://drone.io/github.com/simleb/bindata/latest)
+[![Go Report Card](https://goreportcard.com/badge/github.com/simleb/bindata)](https://goreportcard.com/report/github.com/simleb/bindata)
+
 
 The `bindata` command embeds binary files as byte arrays into a Go source file.
 
